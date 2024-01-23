@@ -1,0 +1,2688 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from nextable.laborasyon.com/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jan 2021 12:49:57 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nextable - Admin Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="vendors/datepicker/daterangepicker.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css">
+
+    <!-- Vmap -->
+    <link rel="stylesheet" href="vendors/vmap/jqvmap.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+</head>
+<body>
+
+<!-- begin::page loader-->
+<div class="page-loader">
+    <div class="spinner-border"></div>
+</div>
+<!-- end::page loader -->
+
+<!-- begin::sidebar user profile -->
+<div class="sidebar" id="userProfile">
+    <div class="text-center p-4">
+        <figure class="avatar avatar-state-success avatar-lg mb-4">
+            <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+        </figure>
+        <h4 class="text-primary">Kenneth Hune</h4>
+        <p class="text-muted d-flex align-items-center justify-content-center line-height-0 mb-0">
+            Team Leader <a href="#" class="ml-2" data-toggle="tooltip" title="Settings"
+                           data-sidebar-open="#settings">
+            <i class="ti-settings"></i> </a>
+        </p>
+    </div>
+    <hr class="m-0">
+    <div class="p-4">
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">
+                Profile completion
+                <span class="float-right">%25</span>
+            </h6>
+            <div class="progress m-b-20" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">
+                Storage
+                <span class="float-right">%77</span>
+            </h6>
+            <div class="progress m-b-20" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 77%;" aria-valuenow="77"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3 ">
+                Completed Tasks
+                <span class="float-right">%40</span>
+            </h6>
+            <div class="progress m-b-20" style="height: 5px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">About</h6>
+            <p class="text-muted">I love reading, traveling and discovering new things. You need to be happy in
+                life.</p>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">City</h6>
+            <p class="text-muted">Germany / Berlin</p>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">Social Links</h6>
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-whatsapp">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">Settings</h6>
+            <div class="form-group">
+                <div class="form-item custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch11">
+                    <label class="custom-control-label" for="customSwitch11">Block</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-item custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" checked="" id="customSwitch12">
+                    <label class="custom-control-label" for="customSwitch12">Mute</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end::sidebar user profile -->
+
+<!-- begin::sidebar settings -->
+<div class="sidebar" id="settings">
+    <header>
+        <i class="ti-settings"></i> Settings
+    </header>
+    <div class="p-4">
+        <div class="mb-3">
+            <h6 class="text-uppercase font-size-11 mb-3 text-muted">System</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Automatic updates</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Current statistics</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+                        <label class="custom-control-label" for="customSwitch2"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>User suggestions</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <h6 class="text-uppercase font-size-11 mb-3 text-muted">Account</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Senior account security</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                        <label class="custom-control-label" for="customSwitch4"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Account protection</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch5" checked>
+                        <label class="custom-control-label" for="customSwitch5"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <h6 class="text-uppercase font-size-11 mb-3 text-muted">Notifications</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Browser notifications</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                        <label class="custom-control-label" for="customSwitch6"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Mobile notifications</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                        <label class="custom-control-label" for="customSwitch7"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Email subscription</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                        <label class="custom-control-label" for="customSwitch8"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Sms notifications</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch9" checked>
+                        <label class="custom-control-label" for="customSwitch9"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end::sidebar settings -->
+
+<!-- begin::navigation -->
+<div class="navigation">
+    <div class="navigation-icon-menu">
+        <ul>
+            <li class="active" data-toggle="tooltip" title="Dashboard">
+                <a href="#navigationDashboards" title="Dashboards">
+                    <i class="icon ti-pie-chart"></i>
+                    <span class="badge badge-warning">2</span>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Apps">
+                <a href="#navigationApps" title="Apps">
+                    <i class="icon ti-package"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Plugins">
+                <a href="#navigationPlugins">
+                    <i class="icon ti-brush-alt"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Elements">
+                <a href="#navigationElements">
+                    <i class="icon ti-layers"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Pages">
+                <a href="#navigationPages" title="User Pages">
+                    <i class="icon ti-user"></i>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li data-toggle="tooltip" title="Edit Profile">
+                <a href="#" class="go-to-page">
+                    <i class="icon ti-settings"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Logout">
+                <a href="login.html" class="go-to-page">
+                    <i class="icon ti-power-off"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation-menu-body">
+        <ul id="navigationDashboards" class="navigation-active">
+            <li class="navigation-divider">DASHBOARD</li>
+            <li>
+                <a class="active" href="index.html">Sales & CRM</a>
+            </li>
+            <li>
+                <a href="dashboard-two.html">Helpdesk <span class="badge badge-warning">2</span></a>
+            </li>
+            <li>
+                <a href="dashboard-three.html">Website Analytics </a>
+            </li>
+            <li class="navigation-divider">Other</li>
+            <li>
+                <a href="widgets.html">Extra Widgets</a>
+            </li>
+            <li class="navigation-divider">Summary</li>
+            <li>
+                <a href="#">
+                    <div class="d-flex align-items-center mb-2">
+                        <div>
+                            <div class="icon-block bg-warning text-white mr-3">
+                                <i class="ti-bar-chart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase font-size-11">Total Sales</h6>
+                            <h4 class="m-b-0">$1,958,104</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="d-flex align-items-center mb-2">
+                        <div>
+                            <div class="icon-block bg-success text-white mr-3">
+                                <i class="ti-email"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase font-size-11">Total Ticket</h6>
+                            <h4 class="m-b-0">214</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <div class="icon-block bg-info text-white mr-3">
+                                <i class="ti-user"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase font-size-11">Unique Visitors</h6>
+                            <h4 class="m-b-0">30.313</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul id="navigationApps">
+            <li class="navigation-divider">Apps</li>
+            <li>
+                <a href="chat.html">Chat</a>
+            </li>
+            <li>
+                <a href="inbox.html">Email</a>
+            </li>
+            <li>
+                <a href="calendar.html">Calendar</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="navigation-divider">Friends</li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-success avatar-xs mr-3">
+                            <span class="avatar-title bg-warning rounded-circle">M</span>
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Mireille Kippin</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-warning avatar-xs mr-3">
+                            <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Janis McGinty</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-danger avatar-xs mr-3">
+                            <span class="avatar-title bg-info rounded-circle">A</span>
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Alf Skeat</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-info avatar-xs mr-3">
+                            <span class="avatar-title bg-danger rounded-circle">K</span>
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Kimball Meeson</h6>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul id="navigationPlugins">
+            <li class="navigation-divider">Plugins</li>
+            <li><a href="sweet-alert.html">Sweet Alert </a></li>
+            <li><a href="lightbox.html">Lightbox </a></li>
+            <li><a href="toast.html">Toast </a></li>
+            <li><a href="tour.html">Tour </a></li>
+            <li><a href="slick-slide.html">Slick Slide </a></li>
+            <li><a href="nestable.html">Nestable </a></li>
+            <li>
+                <a href="charts.html">Charts</a>
+                <ul>
+                    <li><a href="chart-apex.html">Apex</a></li>
+                    <li><a href="chartjs.html">Chartjs</a></li>
+                    <li><a href="chart-justgage.html">Justgage</a></li>
+                    <li><a href="chart-morsis.html">Morsis</a></li>
+                    <li><a href="chart-peity.html">Peity</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Maps</a>
+                <ul>
+                    <li><a href="google-map.html">Google Map</a></li>
+                    <li><a href="vector-map.html">Vector Map</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul id="navigationElements">
+            <li class="navigation-divider">Elements</li>
+            <li>
+                <a href="#">Basic</a>
+                <ul>
+                    <li><a href="alerts.html">Alerts </a></li>
+                    <li><a href="badge.html">Badge </a></li>
+                    <li><a href="buttons.html">Buttons </a></li>
+                    <li><a href="pagination.html">Pagination </a></li>
+                    <li><a href="dropdown.html">Dropdown </a></li>
+                    <li><a href="accordion.html">Accordion </a></li>
+                    <li><a href="carousel.html">Carousel </a></li>
+                    <li><a href="typography.html">Typography </a></li>
+                    <li><a href="list-group.html">List Group </a></li>
+                    <li><a href="media-object.html">Media Object </a></li>
+                    <li><a href="images.html">Images </a></li>
+                    <li><a href="progress.html">Progress </a></li>
+                    <li><a href="modal.html">Modal </a></li>
+                    <li><a href="spinners.html">Spinners </a></li>
+                    <li><a href="navs.html">Navs </a></li>
+                    <li><a href="tab.html">Tab </a></li>
+                    <li><a href="tooltip.html">Tooltip </a></li>
+                    <li><a href="popovers.html">Popovers </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Forms</a>
+                <ul>
+                    <li><a href="basic-form.html">Basic Form </a></li>
+                    <li><a href="custom-form.html">Custom Form </a></li>
+                    <li><a href="advanced-form.html">Advanced Form </a></li>
+                    <li><a href="datepicker.html">Datepicker </a></li>
+                    <li><a href="timepicker.html">Timepicker </a></li>
+                    <li><a href="colorpicker.html">Colorpicker </a></li>
+                    <li><a href="form-validation.html">Form Validation </a></li>
+                    <li><a href="form-wizard.html">Form Wizard </a></li>
+                    <li><a href="file-upload.html">File Upload </a></li>
+                    <li><a href="#">CKEditor</a>
+                        <ul>
+                            <li><a href="ckeditor-article.html">Article Editor </a></li>
+                            <li><a href="ckeditor-inline.html">Inline Editor </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="tables.html">Tables</a>
+                <ul>
+                    <li>
+                        <a href="tables.html">Basic Tables </a>
+                    </li>
+                    <li>
+                        <a href="data-table.html">Data Table </a>
+                    </li>
+                    <li>
+                        <a href="responsive-table.html">Responsive Table </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cards </a>
+                <ul>
+                    <li><a href="basic-cards.html">Basic Cards </a></li>
+                    <li><a href="image-cards.html">Image Cards </a></li>
+                    <li><a href="card-scroll.html">Card Scroll </a></li>
+                    <li><a href="other-cards.html">Others </a></li>
+                </ul>
+            </li>
+            <li><a href="colors.html">Colors </a></li>
+            <li>
+                <a href="avatar.html">Avatars</a>
+            </li>
+            <li>
+                <a href="icons.html">Icons</a>
+            </li>
+        </ul>
+        <ul id="navigationPages">
+            <li class="navigation-divider">Pages</li>
+            <li><a href="profile.html">Profile </a></li>
+            <li><a href="timeline.html">Timeline </a></li>
+            <li><a href="invoice.html">Invoice </a></li>
+            <li><a href="pricing-table.html">Pricing Tables </a></li>
+            <li><a href="search-result.html">Search Result </a></li>
+            <li><a href="login.html">Login </a></li>
+            <li><a href="register.html">Register </a></li>
+            <li><a href="recover-password.html">Recovery Password </a></li>
+            <li><a href="lock-screen.html">Lock Screen </a></li>
+            <li>
+                <a href="#">Email Templates</a>
+                <ul>
+                    <li><a href="email-template-basic.html">Basic</a></li>
+                    <li><a href="email-template-alert.html">Alert</a></li>
+                    <li><a href="email-template-billing.html">Billing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Error Pages </a>
+                <ul>
+                    <li><a href="404.html">404 </a></li>
+                    <li><a href="404-2.html">404 V2</a></li>
+                    <li><a href="503.html">503 </a></li>
+                    <li><a href="mean-at-work.html">Mean at Work </a></li>
+                </ul>
+            </li>
+            <li><a href="blank-page.html">Starter Page</a></li>
+            <li>
+                <a href="#">Menu Level</a>
+                <ul>
+                    <li><a href="#">Menu Level </a>
+                        <ul>
+                            <li><a href="#">Menu Level </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end::navigation -->
+
+<!-- begin::header -->
+<div class="header">
+
+    <!-- begin::header logo -->
+    <div class="header-logo">
+        <a href="index.html">
+            <img class="large-logo" src="assets/media/image/logo.png" alt="image">
+            <img class="small-logo" src="assets/media/image/logo-sm.png" alt="image">
+            <img class="dark-logo" src="assets/media/image/logo-dark.png" alt="image">
+        </a>
+    </div>
+    <!-- end::header logo -->
+
+    <!-- begin::header body -->
+    <div class="header-body">
+
+        <div class="header-body-left">
+
+            <h3 class="page-title">Sales & CRM</h3>
+
+            <!-- begin::breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sales & CRM</li>
+                </ol>
+            </nav>
+            <!-- end::breadcrumb -->
+
+        </div>
+
+        <div class="header-body-right">
+            <!-- begin::navbar main body -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search image">
+                            <div class="input-group-append">
+                                <button class="btn btn-light" type="button">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="ti-plus"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3">
+                            <h6 class="text-uppercase font-size-11 m-b-15">Fast Transactions</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-danger-bright bg-hover pt-3 pb-3 border-radius-1 text-danger text-center mb-3">
+                                            <i class="fa fa-sitemap mb-2 font-size-20"></i>
+                                            Categories
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-info-bright bg-hover pt-3 pb-3 border-radius-1 text-info text-center mb-3">
+                                            <i class="ti-game mb-2 font-size-20"></i>
+                                            Products
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-warning-bright bg-hover pt-3 pb-3 border-radius-1 text-warning text-center">
+                                            <i class="ti-bar-chart-alt mb-2 font-size-20"></i>
+                                            Reports
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-secondary-bright bg-hover pt-3 pb-3 border-radius-1 text-secondary text-center">
+                                            <i class="fa fa-share mb-2 font-size-20"></i>
+                                            Others
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" data-toggle="dropdown">
+                        <i class="ti-comment"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="text-uppercase m-b-0">Messages</h6>
+                            <small class="font-size-11 opacity-7">1 unread messages</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="p-3 list-group-item d-flex link-1 hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-success rounded-circle">M</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Malanie Hanvey
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 08:50</span>
+                                            <span class="text-muted small">Have you madimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="p-3 list-group-item d-flex link-1 bg-secondary-bright hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-primary rounded-circle">TB</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Kenneth Hune
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 10:23</span>
+                                            <span class="text-muted small">I have a meetinimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="p-3 list-group-item d-flex align-items-center link-1 hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-danger rounded-circle">M</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Kevin added
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 08:50</span>
+                                            <span class="text-muted small">Have you madimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="p-3 list-group-item d-flex align-items-center link-1 hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-info rounded-circle">KC</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Katherine Ember
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 20:13</span>
+                                            <span class="text-muted small">I have a meetinimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-3 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="ti-bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="text-uppercase m-b-0">Notifications</h6>
+                            <small class="font-size-11 opacity-7">2 unread notifications</small>
+                        </div>
+                        <div class="p-3">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div>
+                                        <figure class="avatar avatar-state-danger avatar-sm m-r-15 bring-forward">
+                                            <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                <i class="fa fa-file-text-o font-size-20"></i>
+                                            </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <p class="m-b-5">
+                                            <a href="#">Kevin added</a> new attachment to the ticket
+                                            <a href="#">Software Bug Reporting</a>
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fa fa-clock-o m-r-5"></i> 8 hours ago
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div>
+                                        <figure class="avatar avatar-state-danger avatar-sm m-r-15 bring-forward">
+                                            <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                <i class="fa fa-money font-size-20"></i>
+                                            </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <p class="m-b-5">
+                                            <a href="#">Katherine</a> submitted new ticket
+                                            <a href="#">Payment Method</a>
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fa fa-clock-o m-r-5"></i> Yesterday
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div>
+                                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                                            <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                                <i class="fa fa-dollar font-size-20"></i>
+                                            </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <p class="m-b-5">
+                                            <a href="#">Katherine</a> changed settings to ticket category
+                                            <a href="#">Payment & Invoice</a>
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fa fa-clock-o m-r-5"></i> 1 days ago
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link bg-none" data-sidebar-open="#userProfile">
+                        <div>
+                            <figure class="avatar avatar-state-success avatar-sm">
+                                <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+                            </figure>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- end::navbar main body -->
+
+            <div class="d-flex align-items-center">
+                <!-- begin::navbar navigation toggler -->
+                <div class="d-xl-none d-lg-none d-sm-block navigation-toggler">
+                    <a href="#">
+                        <i class="ti-menu"></i>
+                    </a>
+                </div>
+                <!-- end::navbar navigation toggler -->
+
+                <!-- begin::navbar toggler -->
+                <div class="d-xl-none d-lg-none d-sm-block navbar-toggler">
+                    <a href="#">
+                        <i class="ti-arrow-down"></i>
+                    </a>
+                </div>
+                <!-- end::navbar toggler -->
+            </div>
+        </div>
+
+    </div>
+    <!-- end::header body -->
+
+</div>
+<!-- end::header -->
+
+<!-- begin::main content -->
+<main class="main-content">
+
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title d-flex justify-content-between align-items-center">
+                <h6>Sales Channels</h6>
+                <div class="slick-single-arrows">
+                    <a class="btn btn-outline-light btn-sm">
+                        <i class="ti-angle-left"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-sm">
+                        <i class="ti-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row slick-single-item">
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-danger icon-block-floating mr-2">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">All Sales</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-danger">$18M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 71%"
+                                     aria-valuenow="71" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-success icon-block-floating mr-2">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Direct</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-success">$35.5M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 39%"
+                                     aria-valuenow="39"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-info icon-block-floating mr-2">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Phone</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-info">$5.2M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-facebook icon-block-floating mr-2">
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Facebook</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-facebook">$5M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-facebook" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-whatsapp icon-block-floating mr-2">
+                                        <i class="fa fa-whatsapp"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Whatsapp</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-whatsapp">$5M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-whatsapp" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-instagram icon-block-floating mr-2">
+                                        <i class="fa fa-instagram"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Instagram</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-instagram">$5M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-instagram" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-google icon-block-floating mr-2">
+                                        <i class="fa fa-instagram"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Google</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-google">$5M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-google" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-lg-6 col-sm-12">
+                    <div class="card border mb-0">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <div class="icon-block icon-block-sm bg-warning icon-block-floating mr-2">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <span class="text-uppercase font-size-11">Other</span>
+                                <h2 class="mb-0 ml-auto font-weight-bold text-warning">$5M</h2>
+                            </div>
+                            <div class="progress" style="height: 5px">
+                                <div class="progress-bar bg-warning-gradient" role="progressbar" style="width: 50%"
+                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Reports</h6>
+                    <div class="row mb-4">
+                        <div class="col-xl-6 col-md-12 text-primary">
+                            <h5 class="font-size-23">$560.234,076</h5>
+                            <h6 class="text-uppercase font-size-11">Total Sales</h6>
+                        </div>
+                        <div class="col-xl-6 col-md-12 text-success">
+                            <h5 class="font-size-23">$620,076</h5>
+                            <h6 class="text-uppercase font-size-11">Average</h6>
+                        </div>
+                    </div>
+                    <canvas id="chart_demo_1"></canvas>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <div class="card">
+                        <div class="card-header">Total Customers</div>
+                        <div class="card-body text-center">
+                            <div class="mb-2">
+                                <span class="bar-1">2,5,9,6,5,2,4,3,7,5</span>
+                            </div>
+                            <div class="font-size-40 mb-2 font-weight-bold text-primary">1.241</div>
+                            <p class="m-b-0">
+                                <i class="fa fa-caret-up text-primary m-r-5"></i> 23% increase in Last week
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="card">
+                        <div class="card-header">Average Order Value</div>
+                        <div class="card-body text-center">
+                            <div class="mb-2">
+                                <span class="bar-3">2,5,9,6,5,2,4,3,7,5</span>
+                            </div>
+                            <div class="font-size-40 mb-2 font-weight-bold text-success">$732.52</div>
+                            <p class="m-b-0">
+                                <i class="fa fa-caret-down text-danger m-r-5"></i> 4 lead less than last week
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    Sales Channels
+                    <ul class="list-inline">
+                        <li class="list-inline-item mb-0">
+                            <a href="#" class="js-card-refresh link-1">
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mb-0">
+                            <div class="dropdown">
+                                <a href="#" class="link-1" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item">Action</a>
+                                    <a href="#" class="dropdown-item">Another action</a>
+                                    <a href="#" class="dropdown-item">Something else here</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="mb-5 text-center">
+                        <div class="position-relative">
+                            <div id="sales-circle-graphic" class="circle"></div>
+                            <div class="position-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                <h3 class="m-b-0">65%</h3>
+                                <span class="font-size-11 text-uppercase">Average</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6>Google</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1" style="height: 5px">
+                                <div class="progress-bar bg-google" role="progressbar" style="width: 42%;"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="small m-l-10">42%</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6>Instagram</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1" style="height: 5px">
+                                <div class="progress-bar bg-instagram" role="progressbar" style="width: 34%;"
+                                     aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="small m-l-10">34%</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6>Whatsapp</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1" style="height: 5px">
+                                <div class="progress-bar bg-whatsapp" role="progressbar" style="width: 60%;"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="small m-l-10">60%</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6>Facebook</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1" style="height: 5px">
+                                <div class="progress-bar bg-facebook" role="progressbar" style="width: 20%;"
+                                     aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="small m-l-10">20%</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Linkedin</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="progress flex-grow-1" style="height: 5px">
+                                <div class="progress-bar bg-linkedin" role="progressbar" style="width: 30%;"
+                                     aria-valuenow="52" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="small m-l-10">30%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Regional Sales</h6>
+                    <canvas id="chart_demo_9"></canvas>
+                    <div class="row">
+                        <div class="col-md-4 mt-3">
+                            <h5 class="font-size-23 text-primary font-weight-bold">$134.234,076</h5>
+                            <h6 class="text-uppercase font-size-11 mb-0">Total Sales</h6>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <h5 class="font-size-23 text-warning font-weight-bold">$1.620,076</h5>
+                            <h6 class="text-uppercase font-size-11 mb-0">Average</h6>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <h5 class="font-size-23 text-danger font-weight-bold">$20,076</h5>
+                            <h6 class="text-uppercase font-size-11 mb-0">Return</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-body d-flex justify-content-between align-items-center flex-lg-row">
+                        <span>
+                            <span class="icon-block bg-success icon-block-floating icon-block-sm m-r-10">
+                                <i class="fa fa-download font-size-16"></i>
+                            </span>
+                            Report prepared. You can download it now
+                        </span>
+                        <a href="#" class="btn btn-sm btn-light btn-uppercase">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Product Sales</div>
+                <div class="card-body">
+                    <div class="m-b-20 d-flex align-items-center">
+                        <div class="icon-block icon-block-outline-success icon-block-floating m-r-10">
+                            <i class="fa fa-cube font-size-18"></i>
+                        </div>
+                        <h2 class="m-0 font-weight-bold">65,353</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="m-b-10">
+                                4,324
+                                <small class="text-uppercase font-size-11 m-l-5">Total Price</small>
+                            </h3>
+                            <div class="progress m-b-10" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <i class="fa fa-caret-up text-success"></i> 10% decrease
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="m-b-10">
+                                2,214
+                                <small class="text-uppercase font-size-11 m-l-5">Total Stock</small>
+                            </h3>
+                            <div class="progress m-b-10" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                     aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <i class="fa fa-caret-down text-danger"></i> 14% increases
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Purchase Status</div>
+                <div class="card-body">
+                    <div class="m-b-20 d-lg-flex justify-content-between align-items-center">
+                        <ul class="list-inline m-l-5">
+                            <li class="list-inline-item text-uppercase font-size-11">
+                                <i class="fa fa-circle text-success m-r-5"></i> Success
+                            </li>
+                            <li class="list-inline-item text-uppercase font-size-11">
+                                <i class="fa fa-circle text-danger m-r-5"></i> Return
+                            </li>
+                        </ul>
+                        <div class="reportrange btn btn-outline-light">
+                            <i class="ti-calendar m-r-10"></i>
+                            <span></span>
+                            <i class="ti-angle-down m-l-10"></i>
+                        </div>
+                        <div class="d-lg-none d-sm-block mb-4"></div>
+                    </div>
+                    <canvas id="chart_demo_3"></canvas>
+                    <div class="row mt-4">
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="card card-body text-success bg-success-bright text-center mb-2">
+                                <h5 class="font-size-23 font-weight-bold">$234.076</h5>
+                                <h6 class="text-uppercase font-size-11 m-b-0">Total Sales</h6>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="card card-body bg-danger-bright text-danger text-center mb-2">
+                                <h5 class="font-size-23 font-weight-bold">$20.076</h5>
+                                <h6 class="text-uppercase font-size-11 m-b-0">Return</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Your Most Recent Earnings</h6>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center m-b-20">
+                                <div class="icon-block m-r-15 icon-block-lg icon-block-outline-success text-success">
+                                    <i class="fa fa-bar-chart"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-uppercase font-size-11">Gross Earnings</h6>
+                                    <h4 class="m-b-0">$1,958,104</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center m-b-20">
+                                <div class="icon-block m-r-15 icon-block-lg icon-block-outline-danger  text-danger">
+                                    <i class="fa fa-hand-lizard-o"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-uppercase font-size-11">Tax Withheld</h6>
+                                    <h4 class="m-b-0">$234,769</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center m-b-20">
+                                <div class="icon-block m-r-15 icon-block-lg icon-block-outline-warning text-warning">
+                                    <i class="fa fa-dollar"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-uppercase font-size-11">Net Earnings</h6>
+                                    <h4 class="m-b-0">$1,608,469</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table m-b-0">
+                            <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Sales Count</th>
+                                <th>Gross Earnings</th>
+                                <th>Tax Withheld</th>
+                                <th class="text-right">Net Earnings</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>03/15/2018</td>
+                                <td>1,050</td>
+                                <td class="text-success">+ $32,580.00</td>
+                                <td class="text-danger">- $3,023.10</td>
+                                <td class="text-right">$28,670.90</td>
+                            </tr>
+                            <tr>
+                                <td>03/14/2018</td>
+                                <td>780</td>
+                                <td class="text-success">+ $30,065.10</td>
+                                <td class="text-danger">- $2,780.00</td>
+                                <td class="text-right">$26,930.40</td>
+                            </tr>
+                            <tr>
+                                <td>03/13/2018</td>
+                                <td>1.980</td>
+                                <td class="text-success">+ $30,065.10</td>
+                                <td class="text-danger">- $2,780.00</td>
+                                <td class="text-right">$26,930.40</td>
+                            </tr>
+                            <tr>
+                                <td>03/12/2018</td>
+                                <td>300</td>
+                                <td class="text-success">+ $30,065.10</td>
+                                <td class="text-danger">- $2,780.00</td>
+                                <td class="text-right">$26,930.40</td>
+                            </tr>
+                            <tr>
+                                <td>03/11/2018</td>
+                                <td>940</td>
+                                <td class="text-success">+ $30,065.10</td>
+                                <td class="text-danger">- $2,780.00</td>
+                                <td class="text-right">$26,930.40</td>
+                            </tr>
+                            <tr>
+                                <td>03/10/2018</td>
+                                <td>1.280</td>
+                                <td class="text-success">+ $30,065.10</td>
+                                <td class="text-danger">-$2,780.00</td>
+                                <td class="text-right">$26,930.40</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-md-12">
+            <div class="card">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <span>Income Distribution</span>
+                    <div class="dropdown">
+                        <a class="btn btn-outline-light btn-sm" href="#" data-toggle="dropdown">
+                            USA <i class="ti-angle-down m-l-5"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#" class="dropdown-item">USA</a>
+                            <a href="#" class="dropdown-item">Germany</a>
+                            <a href="#" class="dropdown-item">France</a>
+                            <a href="#" class="dropdown-item">Italy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="vmap_usa_en" style="height: 300px"></div>
+                    <div class="table-responsive">
+                        <table class="table table-borderless m-b-0">
+                            <thead>
+                            <tr>
+                                <th class="wd-40">States</th>
+                                <th class="wd-25 text-right">Orders</th>
+                                <th class="wd-35 text-right">Earnings</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="tx-medium">California</td>
+                                <td class="text-right">12,201</td>
+                                <td class="text-right text-success">$150,200.80</td>
+                            </tr>
+                            <tr>
+                                <td class="tx-medium">Texas</td>
+                                <td class="text-right">11,950</td>
+                                <td class="text-right text-success">$138,910.20</td>
+                            </tr>
+                            <tr>
+                                <td class="tx-medium">Wyoming</td>
+                                <td class="text-right">11,198</td>
+                                <td class="text-right text-success">$132,050.00</td>
+                            </tr>
+                            <tr>
+                                <td class="tx-medium">Florida</td>
+                                <td class="text-right">9,885</td>
+                                <td class="text-right text-success">$127,762.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    New Customers
+                    <a href="#" class="js-card-refresh link-1">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm avatar-state-success m-r-15">
+                                <span class="avatar-title bg-primary rounded-circle">V</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Valentine Maton</h6>
+                                <small class="text-muted">Engineer</small>
+                            </div>
+                            <div class="dropdown ml-auto">
+                                <a href="#" data-toggle="dropdown" class="btn btn-primary btn-sm"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item">View</a>
+                                    <a href="#" class="dropdown-item">Send Message</a>
+                                    <a href="#" class="dropdown-item">Assign</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm avatar-state-success m-r-15">
+                                <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Holmes Cherryman</h6>
+                                <small class="text-muted">Human resources</small>
+                            </div>
+                            <div class="dropdown ml-auto">
+                                <a href="#" data-toggle="dropdown" class="btn btn-primary btn-sm"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item">View</a>
+                                    <a href="#" class="dropdown-item">Send Message</a>
+                                    <a href="#" class="dropdown-item">Assign</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm avatar-state-success m-r-15">
+                                <span class="avatar-title bg-primary rounded-circle">AE</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Malanie Hanvey</h6>
+                                <small class="text-muted">Real estate agent</small>
+                            </div>
+                            <div class="dropdown ml-auto">
+                                <a href="#" data-toggle="dropdown" class="btn btn-primary btn-sm"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item">View</a>
+                                    <a href="#" class="dropdown-item">Send Message</a>
+                                    <a href="#" class="dropdown-item">Assign</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm avatar-state-success m-r-15">
+                                <span class="avatar-title bg-dark rounded-circle">KC</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Kenneth Hune</h6>
+                                <small class="text-muted">Engineer</small>
+                            </div>
+                            <div class="dropdown ml-auto">
+                                <a href="#" data-toggle="dropdown" class="btn btn-primary btn-sm"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="#" class="dropdown-item">View</a>
+                                    <a href="#" class="dropdown-item">Send Message</a>
+                                    <a href="#" class="dropdown-item">Assign</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-block text-center text-uppercase font-size-11 p-b-0">
+                        View All
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    Daily Task List
+                    <a href="#" class="js-card-refresh link-1">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="custom-control custom-checkbox-success custom-checkbox todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck1">Talk
+                            to new customers
+                            <small class="text-muted font-size-11">13 May 2019</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox-success custom-checkbox-success custom-checkbox todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck2">Older
+                            users will be deleted from
+                            the system
+                            <small class="text-muted font-size-11">20 Apr 2019</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox-success custom-checkbox todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck3">Assignment
+                            will be
+                            completed
+                            <small class="text-muted font-size-11">13 May 2019</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox-success custom-checkbox todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4" checked>
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck4">Customer
+                            notes
+                            <small class="text-muted font-size-11">10 Jan 2018</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox-success custom-checkbox todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck5">Clear
+                            old log records and backup
+                            will be taken
+                            <small class="text-muted font-size-11">13 May 2019</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-checkbox-success todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck6">Talk
+                            to new customers
+                            <small class="text-muted font-size-11">27 Feb 2019</small>
+                        </label>
+                    </div>
+                    <div class="custom-control custom-checkbox-success custom-checkbox todo-item">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7" checked>
+                        <label class="custom-control-label d-flex justify-content-between" for="customCheck7">Older
+                            users will be deleted from
+                            the system
+                            <small class="text-muted font-size-11">13 May 2019</small>
+                        </label>
+                    </div>
+                    <form class="mt-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Example text with button addon"
+                                   placeholder="New task" aria-describedby="button-addon1">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="button-addon1">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    Users Assigned to Me
+                    <a href="#" class="js-card-refresh link-1">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm m-r-15">
+                                <span class="avatar-title bg-success rounded-circle">E</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Emma Maton</h6>
+                                <small class="text-muted">Engineer</small>
+                            </div>
+                            <span class="badge badge-danger ml-auto">Denied</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm m-r-15">
+                                <span class="avatar-title bg-danger rounded-circle">K</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Kevin Cherryman</h6>
+                                <small class="text-muted">Human resources</small>
+                            </div>
+                            <span class="badge badge-success ml-auto">Completed</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm m-r-15">
+                                <span class="avatar-title bg-warning rounded-circle">SA</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Sarah Hanvey</h6>
+                                <small class="text-muted">Real estate agent</small>
+                            </div>
+                            <span class="badge badge-warning ml-auto">Pending</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center p-l-r-0">
+                            <figure class="avatar avatar-sm m-r-15">
+                                <span class="avatar-title bg-info rounded-circle">T</span>
+                            </figure>
+                            <div>
+                                <h6 class="m-b-0">Thomas Hune</h6>
+                                <small class="text-muted">Engineer</small>
+                            </div>
+                            <span class="badge badge-success ml-auto">Completed</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-block text-center text-uppercase font-size-11 p-b-0">
+                        View All
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- end::main content -->
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- Chartjs -->
+<script src="vendors/charts/chartjs/chart.min.js"></script>
+
+<!-- Circle progress -->
+<script src="vendors/circle-progress/circle-progress.min.js"></script>
+
+<!-- Peity -->
+<script src="vendors/charts/peity/jquery.peity.min.js"></script>
+<script src="assets/js/examples/charts/peity.js"></script>
+
+<!-- Datepicker -->
+<script src="vendors/datepicker/daterangepicker.js"></script>
+
+<!-- Slick -->
+<script src="vendors/slick/slick.min.js"></script>
+
+<!-- Vamp -->
+<script src="vendors/vmap/jquery.vmap.min.js"></script>
+<script src="vendors/vmap/maps/jquery.vmap.usa.js"></script>
+<script src="assets/js/examples/vmap.js"></script>
+
+<!-- Dashboard scripts 
+<script src="assets/js/examples/dashboard.js"></script>-->
+
+
+<script>
+
+$(document).ready(function () {
+
+    var colors = {
+        primary: $('.colors .bg-primary').css('background-color'),
+        primaryLight: $('.colors .bg-primary-bright').css('background-color'),
+        secondary: $('.colors .bg-secondary').css('background-color'),
+        secondaryLight: $('.colors .bg-secondary-bright').css('background-color'),
+        info: $('.colors .bg-info').css('background-color'),
+        infoLight: $('.colors .bg-info-bright').css('background-color'),
+        success: $('.colors .bg-success').css('background-color'),
+        successLight: $('.colors .bg-success-bright').css('background-color'),
+        danger: $('.colors .bg-danger').css('background-color'),
+        dangerLight: $('.colors .bg-danger-bright').css('background-color'),
+        warning: $('.colors .bg-warning').css('background-color'),
+        warningLight: $('.colors .bg-warning-bright').css('background-color'),
+    };
+
+    /**
+     *  Slick slide example
+     **/
+
+    if ($('.slick-single-item').length) {
+        $('.slick-single-item').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '.slick-single-arrows a:eq(0)',
+            nextArrow: '.slick-single-arrows a:eq(1)',
+            responsive: [
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
+
+    if ($('.reportrange').length > 0) {
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        function cb(start, end) {
+            $('.reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+
+        $('.reportrange').daterangepicker({
+            startDate: start,
+            endDate: end,
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+
+        cb(start, end);
+    }
+
+    var chartColors = {
+        primary: {
+            base: '#3f51b5',
+            light: '#c0c5e4'
+        },
+        danger: {
+            base: '#f2125e',
+            light: '#fcd0df'
+        },
+        success: {
+            base: '#0acf97',
+            light: '#cef5ea'
+        },
+        warning: {
+            base: '#ff8300',
+            light: '#ffe6cc'
+        },
+        info: {
+            base: '#00bcd4',
+            light: '#e1efff'
+        },
+        dark: '#37474f',
+        facebook: '#3b5998',
+        twitter: '#55acee',
+        linkedin: '#0077b5',
+        instagram: '#517fa4',
+        whatsapp: '#25D366',
+        dribbble: '#ea4c89',
+        google: '#DB4437',
+        borderColor: '#e8e8e8',
+        fontColor: '#999'
+    };
+
+    if ($('body').hasClass('dark')) {
+        chartColors.borderColor = 'rgba(255, 255, 255, .1)';
+        chartColors.fontColor = 'rgba(255, 255, 255, .4)';
+    }
+
+    /// Chartssssss
+
+    chart_demo_1();
+
+    chart_demo_2();
+
+    chart_demo_3();
+
+    chart_demo_4();
+
+    chart_demo_5();
+
+    chart_demo_6();
+
+    chart_demo_7();
+
+    chart_demo_8();
+
+    chart_demo_9();
+
+    chart_demo_10();
+
+    function chart_demo_1() {
+        if ($('#chart_demo_1').length) {
+            var element = document.getElementById("chart_demo_1");
+            element.height = 146;
+            new Chart(element, {
+                type: 'bar',
+                data: {
+                    labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"],
+                    datasets: [
+                        {
+                            label: "Total Sales",
+                            backgroundColor: colors.primary,
+                            data: [133, 221, 783, 978, 214, 421, 211, 577]
+                        }, {
+                            label: "Average",
+                            backgroundColor: colors.info,
+                            data: [408, 947, 675, 734, 325, 672, 632, 213]
+                        }
+                    ]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontSize: 11,
+                                fontColor: chartColors.fontColor
+                            },
+                            gridLines: {
+                                display: false,
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                fontSize: 11,
+                                fontColor: chartColors.fontColor
+                            },
+                            gridLines: {
+                                color: chartColors.borderColor
+                            }
+                        }],
+                    }
+                }
+            })
+        }
+    }
+
+    function chart_demo_2() {
+        if ($('#chart_demo_2').length) {
+            var ctx = document.getElementById('chart_demo_2').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Jun 2016", "Jul 2016", "Aug 2016", "Sep 2016", "Oct 2016", "Nov 2016", "Dec 2016", "Jan 2017", "Feb 2017", "Mar 2017", "Apr 2017", "May 2017"],
+                    datasets: [{
+                        label: "Rainfall",
+                        backgroundColor: chartColors.primary.light,
+                        borderColor: chartColors.primary.base,
+                        data: [26.4, 39.8, 66.8, 66.4, 40.6, 55.2, 77.4, 69.8, 57.8, 76, 110.8, 142.6],
+                    }]
+                },
+                options: {
+                    legend: {
+                        display: false,
+                        labels: {
+                            fontColor: chartColors.fontColor
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Precipitation in Toronto',
+                        fontColor: chartColors.fontColor,
+                    },
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor,
+                                beginAtZero: true
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Precipitation in mm',
+                                fontColor: chartColors.fontColor,
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor,
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    }
+
+    function chart_demo_3() {
+        if ($('#chart_demo_3').length) {
+            var element = document.getElementById("chart_demo_3"),
+                ctx = element.getContext("2d");
+
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: 'Success',
+                        borderColor: colors.success,
+                        data: [-10, 30, -20, 0, 25, 44, 30, 15, 20, 10, 5, -5],
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        borderDash: [2, 2],
+                        fill: false
+                    }, {
+                        label: 'Return',
+                        fill: false,
+                        borderDash: [2, 2],
+                        borderColor: colors.danger,
+                        data: [20, 0, 22, 39, -10, 19, -7, 0, 15, 0, -10, 5],
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: {
+                        display: false,
+                        labels: {
+                            fontColor: chartColors.fontColor
+                        }
+                    },
+                    title: {
+                        display: false,
+                        fontColor: chartColors.fontColor
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                display: false,
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor,
+                                display: false
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor,
+                                min: -50,
+                                max: 50
+                            }
+                        }],
+                    }
+                }
+            });
+
+        }
+    }
+
+    function chart_demo_4() {
+        if ($('#chart_demo_4').length) {
+            var ctx = document.getElementById("chart_demo_4").getContext("2d");
+            var densityData = {
+                backgroundColor: chartColors.primary.light,
+                data: [10, 20, 40, 60, 80, 40, 60, 80, 40, 80, 20, 59]
+            };
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [densityData]
+                },
+                options: {
+                    scaleFontColor: "#FFFFFF",
+                    legend: {
+                        display: false,
+                        labels: {
+                            fontColor: chartColors.fontColor
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor,
+                                min: 0,
+                                max: 100,
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    }
+
+    function chart_demo_5() {
+        if ($('#chart_demo_5').length) {
+            var ctx = document.getElementById('chart_demo_5').getContext('2d');
+            window.myBar = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May'],
+                    datasets: [
+                        {
+                            label: 'Dataset 1',
+                            backgroundColor: [
+                                chartColors.info.base,
+                                chartColors.success.base,
+                                chartColors.danger.base,
+                                chartColors.dark,
+                                chartColors.warning.base,
+                            ],
+                            yAxisID: 'y-axis-1',
+                            data: [33, 56, -40, 25, 45]
+                        },
+                        {
+                            label: 'Dataset 2',
+                            backgroundColor: chartColors.info.base,
+                            yAxisID: 'y-axis-2',
+                            data: [23, 86, -40, 5, 45]
+                        }
+                    ]
+                },
+                options: {
+                    legend: {
+                        labels: {
+                            fontColor: chartColors.fontColor
+                        }
+                    },
+                    responsive: true,
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart - Multi Axis',
+                        fontColor: chartColors.fontColor
+                    },
+                    tooltips: {
+                        mode: 'index',
+                        intersect: true
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor
+                            }
+                        }],
+                        yAxes: [
+                            {
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                                id: 'y-axis-1',
+                            },
+                            {
+                                gridLines: {
+                                    color: chartColors.borderColor
+                                },
+                                ticks: {
+                                    fontColor: chartColors.fontColor
+                                }
+                            },
+                            {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+                                id: 'y-axis-2',
+                                gridLines: {
+                                    drawOnChartArea: false
+                                },
+                                ticks: {
+                                    fontColor: chartColors.fontColor
+                                }
+                            }
+                        ],
+                    }
+                }
+            });
+        }
+    }
+
+    function chart_demo_6() {
+        if ($('#chart_demo_6').length) {
+            var ctx = document.getElementById("chart_demo_6").getContext("2d");
+            var speedData = {
+                labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+                datasets: [{
+                    label: "Car Speed (mph)",
+                    borderColor: chartColors.primary.base,
+                    backgroundColor: 'rgba(0, 0, 0, 0',
+                    data: [0, 59, 75, 20, 20, 55, 40]
+                }]
+            };
+            var chartOptions = {
+                legend: {
+                    scaleFontColor: "#FFFFFF",
+                    position: 'top',
+                    labels: {
+                        fontColor: chartColors.fontColor
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            color: chartColors.borderColor
+                        },
+                        ticks: {
+                            fontColor: chartColors.fontColor
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            color: chartColors.borderColor
+                        },
+                        ticks: {
+                            fontColor: chartColors.fontColor
+                        }
+                    }]
+                }
+            };
+            new Chart(ctx, {
+                type: 'line',
+                data: speedData,
+                options: chartOptions
+            });
+        }
+    }
+
+    function chart_demo_7() {
+        if ($('#chart_demo_7').length) {
+            var ctx = document.getElementById("chart_demo_7").getContext("2d");
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [15, 25, 10, 30],
+                        backgroundColor: [
+                            colors.success,
+                            colors.danger,
+                            colors.warning,
+                            colors.info
+                        ],
+                        label: 'Dataset 1'
+                    }],
+                    labels: [
+                        'Social Media',
+                        'Organic Search',
+                        'Referrral',
+                        'Email'
+                    ]
+                },
+                options: {
+                    elements: {
+                        arc: {
+                            borderWidth: 0
+                        }
+                    },
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: false
+                    },
+                    animation: {
+                        animateScale: true,
+                        animateRotate: true
+                    }
+                }
+            });
+        }
+    }
+
+    function chart_demo_8() {
+        if ($('#chart_demo_8').length) {
+            new Chart(document.getElementById("chart_demo_8"), {
+                type: 'radar',
+                data: {
+                    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                    datasets: [
+                        {
+                            label: "1950",
+                            fill: true,
+                            backgroundColor: "rgba(179,181,198,0.2)",
+                            borderColor: "rgba(179,181,198,1)",
+                            pointBorderColor: "#fff",
+                            pointBackgroundColor: "rgba(179,181,198,1)",
+                            data: [-8.77, -55.61, 21.69, 6.62, 6.82]
+                        }, {
+                            label: "2050",
+                            fill: true,
+                            backgroundColor: "rgba(255,99,132,0.2)",
+                            borderColor: "rgba(255,99,132,1)",
+                            pointBorderColor: "#fff",
+                            pointBackgroundColor: "rgba(255,99,132,1)",
+                            data: [-25.48, 54.16, 7.61, 8.06, 4.45]
+                        }
+                    ]
+                },
+                options: {
+                    legend: {
+                        labels: {
+                            fontColor: chartColors.fontColor
+                        }
+                    },
+                    scale: {
+                        gridLines: {
+                            color: chartColors.borderColor
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Distribution in % of world population',
+                        fontColor: chartColors.fontColor
+                    }
+                }
+            });
+        }
+    }
+
+    function chart_demo_9() {
+        if ($('#chart_demo_9').length) {
+            new Chart(document.getElementById("chart_demo_9"), {
+                type: 'horizontalBar',
+                data: {
+                    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                    datasets: [
+                        {
+                            label: "Population (millions)",
+                            backgroundColor: colors.primary,
+                            data: [2478, 2267, 734, 1284, 1933]
+                        }
+                    ]
+                },
+                options: {
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor,
+                                display: false
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor,
+                                display: false
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor
+                            },
+                            barPercentage: 0.5
+                        }]
+                    }
+                }
+            });
+        }
+    }
+
+    function chart_demo_10() {
+        if ($('#chart_demo_10').length) {
+            var element = document.getElementById("chart_demo_10");
+            new Chart(element, {
+                type: 'bar',
+                data: {
+                    labels: ["1900", "1950", "1999", "2050"],
+                    datasets: [
+                        {
+                            label: "Europe",
+                            type: "line",
+                            borderColor: "#8e5ea2",
+                            data: [408, 547, 675, 734],
+                            fill: false
+                        },
+                        {
+                            label: "Africa",
+                            type: "line",
+                            borderColor: "#3e95cd",
+                            data: [133, 221, 783, 2478],
+                            fill: false
+                        },
+                        {
+                            label: "Europe",
+                            type: "bar",
+                            backgroundColor: chartColors.primary.base,
+                            data: [408, 547, 675, 734],
+                        },
+                        {
+                            label: "Africa",
+                            type: "bar",
+                            backgroundColor: chartColors.primary.light,
+                            data: [133, 221, 783, 2478]
+                        }
+                    ]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Population growth (millions): Europe & Africa',
+                        fontColor: chartColors.fontColor
+                    },
+                    legend: {
+                        display: true,
+                        labels: {
+                            fontColor: chartColors.fontColor
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                color: chartColors.borderColor
+                            },
+                            ticks: {
+                                fontColor: chartColors.fontColor
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    }
+
+    if ($('#circle-1').length) {
+        $('#circle-1').circleProgress({
+            startAngle: 1.55,
+            value: 0.65,
+            size: 110,
+            thickness: 10,
+            fill: {
+                color: colors.primary
+            }
+        });
+    }
+
+    if ($('#sales-circle-graphic').length) {
+        $('#sales-circle-graphic').circleProgress({
+            startAngle: 1.55,
+            value: 0.65,
+            size: 180,
+            thickness: 30,
+            fill: {
+                color: colors.primary
+            }
+        });
+    }
+
+    if ($('#circle-2').length) {
+        $('#circle-2').circleProgress({
+            startAngle: 1.55,
+            value: 0.35,
+            size: 110,
+            thickness: 10,
+            fill: {
+                color: colors.success
+            }
+        });
+    }
+
+    ////////////////////////////////////////////
+
+    if ($(".dashboard-pie-1").length) {
+        $(".dashboard-pie-1").peity("pie", {
+            fill: [colors.primaryLight, colors.primary],
+            radius: 30
+        });
+    }
+
+    if ($(".dashboard-pie-2").length) {
+        $(".dashboard-pie-2").peity("pie", {
+            fill: [colors.successLight, colors.success],
+            radius: 30
+        });
+    }
+
+    if ($(".dashboard-pie-3").length) {
+        $(".dashboard-pie-3").peity("pie", {
+            fill: [colors.warningLight, colors.warning],
+            radius: 30
+        });
+    }
+
+    if ($(".dashboard-pie-4").length) {
+        $(".dashboard-pie-4").peity("pie", {
+            fill: [colors.infoLight, colors.info],
+            radius: 30
+        });
+    }
+
+    ////////////////////////////////////////////
+
+    function bar_chart() {
+        if ($('#chart-ticket-status').length > 0) {
+            var dataSource = [
+                {country: "USA", hydro: 59.8, oil: 937.6, gas: 582, coal: 564.3, nuclear: 187.9},
+                {country: "China", hydro: 74.2, oil: 308.6, gas: 35.1, coal: 956.9, nuclear: 11.3},
+                {country: "Russia", hydro: 40, oil: 128.5, gas: 361.8, coal: 105, nuclear: 32.4},
+                {country: "Japan", hydro: 22.6, oil: 241.5, gas: 64.9, coal: 120.8, nuclear: 64.8},
+                {country: "India", hydro: 19, oil: 119.3, gas: 28.9, coal: 204.8, nuclear: 3.8},
+                {country: "Germany", hydro: 6.1, oil: 123.6, gas: 77.3, coal: 85.7, nuclear: 37.8}
+            ];
+
+            // Return with commas in between
+            var numberWithCommas = function (x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            };
+
+            var dataPack1 = [40, 47, 44, 38, 27, 40, 47, 44, 38, 27, 40, 27];
+            var dataPack2 = [10, 12, 7, 5, 4, 10, 12, 7, 5, 4, 10, 12];
+            var dataPack3 = [17, 11, 22, 18, 12, 17, 11, 22, 18, 12, 17, 11];
+            var dates = ["Jan", "Jan", "Jan", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
+            var bar_ctx = document.getElementById('chart-ticket-status');
+
+            bar_ctx.height = 115;
+
+            new Chart(bar_ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: dates,
+                        datasets: [
+                            {
+                                label: 'Pending Tickets',
+                                data: dataPack1,
+                                backgroundColor: colors.primaryLight,
+                                hoverBorderWidth: 0
+                            },
+                            {
+                                label: 'Solved Tickets',
+                                data: dataPack2,
+                                backgroundColor: colors.successLight,
+                                hoverBorderWidth: 0
+                            },
+                            {
+                                label: 'Open Tickets',
+                                data: dataPack3,
+                                backgroundColor: colors.dangerLight,
+                                hoverBorderWidth: 0
+                            },
+                        ]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        animation: {
+                            duration: 10,
+                        },
+                        tooltips: {
+                            mode: 'label',
+                            callbacks: {
+                                label: function (tooltipItem, data) {
+                                    return data.datasets[tooltipItem.datasetIndex].label + ": " + numberWithCommas(tooltipItem.yLabel);
+                                }
+                            }
+                        },
+                        scales: {
+                            xAxes: [{
+                                stacked: true,
+                                gridLines: {display: false},
+                                ticks: {
+                                    fontSize: 11,
+                                    fontColor: chartColors.fontColor
+                                }
+                            }],
+                            yAxes: [{
+                                stacked: true,
+                                ticks: {
+                                    callback: function (value) {
+                                        return numberWithCommas(value);
+                                    },
+                                    fontSize: 11,
+                                    fontColor: chartColors.fontColor
+                                },
+                            }],
+                        }
+                    },
+                    plugins: [{
+                        beforeInit: function (chart) {
+                            chart.data.labels.forEach(function (value, index, array) {
+                                var a = [];
+                                a.push(value.slice(0, 5));
+                                var i = 1;
+                                while (value.length > (i * 5)) {
+                                    a.push(value.slice(i * 5, (i + 1) * 5));
+                                    i++;
+                                }
+                                array[index] = a;
+                            })
+                        }
+                    }]
+                }
+            );
+        }
+    }
+
+    bar_chart();
+
+    function users_chart() {
+        if ($('#users-chart').length > 0) {
+            var element = document.getElementById("users-chart");
+
+            element.height = 110;
+
+            new Chart(element, {
+                type: 'bar',
+                data: {
+                    labels: ["Jan", "Fen", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: "Europe",
+                        type: "bar",
+                        backgroundColor: colors.primary,
+                        data: [408, 547, 675, 734, 122, 323, 94, 312, 282, 500, 800, 1050],
+                    }, {
+                        label: "Africa",
+                        type: "bar",
+                        backgroundColor: colors.info,
+                        data: [133, 221, 783, 1478, 821, 321, 400, 200, 820, 300, 511, 100]
+                    }]
+                },
+                options: {
+                    title: {
+                        display: false
+                    },
+                    legend: {display: false},
+                    scales: {
+                        yAxes: [{
+                            fontSize: 11,
+                            fontColor: chartColors.fontColor
+                        }],
+                        xAxes: [{
+                            gridLines: {display: false},
+                            ticks: {
+                                display: false
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    }
+
+    users_chart();
+
+    function device_session_chart() {
+        if ($('#device_session_chart').length > 0) {
+            var element = document.getElementById("device_session_chart");
+            element.height = 155;
+            new Chart(element, {
+                type: 'line',
+                data: {
+                    labels: [1500, 1600, 1700, 1750, 1800, 1850, 1900, 1950, 1999, 2050],
+                    datasets: [{
+                        data: [2186, 2000, 1900, 2300, 2150, 2100, 2350, 2500, 2400, 2390],
+                        label: "Mobile",
+                        backgroundColor: colors.primary,
+                        borderColor: colors.primary,
+                        fill: false
+                    }, {
+                        data: [1282, 1000, 1290, 1302, 1400, 1250, 1350, 1402, 1700, 1967],
+                        label: "Desktop",
+                        backgroundColor: colors.success,
+                        borderColor: colors.success,
+                        fill: false
+                    }, {
+                        data: [500, 700, 900, 800, 600, 850, 900, 550, 750, 690],
+                        label: "Other",
+                        backgroundColor: colors.warning,
+                        borderColor: colors.warning,
+                        fill: false
+                    }]
+                },
+                options: {
+                    title: {
+                        display: false
+                    },
+                    legend: {display: false},
+                    scales: {
+                        yAxes: [{
+                            gridLines: {display: false},
+                            ticks: {
+                                display: false
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {display: false},
+                            ticks: {
+                                fontSize: 11,
+                                fontColor: chartColors.fontColor
+                            }
+                        }],
+                    }
+                }
+            });
+        }
+    }
+
+    device_session_chart();
+
+});
+
+</script>
+
+
+<div class="colors"> <!-- To use theme colors with Javascript -->
+    <div class="bg-primary"></div>
+    <div class="bg-primary-bright"></div>
+    <div class="bg-secondary"></div>
+    <div class="bg-secondary-bright"></div>
+    <div class="bg-info"></div>
+    <div class="bg-info-bright"></div>
+    <div class="bg-success"></div>
+    <div class="bg-success-bright"></div>
+    <div class="bg-danger"></div>
+    <div class="bg-danger-bright"></div>
+    <div class="bg-warning"></div>
+    <div class="bg-warning-bright"></div>
+</div>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script>
+</body>
+
+<!-- Mirrored from nextable.laborasyon.com/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jan 2021 12:50:40 GMT -->
+</html>

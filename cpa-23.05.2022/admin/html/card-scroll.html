@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from nextable.laborasyon.com/default/card-scroll.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jan 2021 12:53:48 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nextable - Admin Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+</head>
+<body>
+
+<!-- begin::page loader-->
+<div class="page-loader">
+    <div class="spinner-border"></div>
+</div>
+<!-- end::page loader -->
+
+<!-- begin::sidebar user profile -->
+<div class="sidebar" id="userProfile">
+    <div class="text-center p-4">
+        <figure class="avatar avatar-state-success avatar-lg mb-4">
+            <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+        </figure>
+        <h4 class="text-primary">Kenneth Hune</h4>
+        <p class="text-muted d-flex align-items-center justify-content-center line-height-0 mb-0">
+            Team Leader <a href="#" class="ml-2" data-toggle="tooltip" title="Settings"
+                           data-sidebar-open="#settings">
+            <i class="ti-settings"></i> </a>
+        </p>
+    </div>
+    <hr class="m-0">
+    <div class="p-4">
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">
+                Profile completion
+                <span class="float-right">%25</span>
+            </h6>
+            <div class="progress m-b-20" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">
+                Storage
+                <span class="float-right">%77</span>
+            </h6>
+            <div class="progress m-b-20" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 77%;" aria-valuenow="77"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3 ">
+                Completed Tasks
+                <span class="float-right">%40</span>
+            </h6>
+            <div class="progress m-b-20" style="height: 5px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">About</h6>
+            <p class="text-muted">I love reading, traveling and discovering new things. You need to be happy in
+                life.</p>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">City</h6>
+            <p class="text-muted">Germany / Berlin</p>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">Social Links</h6>
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-whatsapp">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="btn btn-sm btn-floating btn-linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-4">
+            <h6 class="text-uppercase font-size-11 mb-3">Settings</h6>
+            <div class="form-group">
+                <div class="form-item custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch11">
+                    <label class="custom-control-label" for="customSwitch11">Block</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-item custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" checked="" id="customSwitch12">
+                    <label class="custom-control-label" for="customSwitch12">Mute</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end::sidebar user profile -->
+
+<!-- begin::sidebar settings -->
+<div class="sidebar" id="settings">
+    <header>
+        <i class="ti-settings"></i> Settings
+    </header>
+    <div class="p-4">
+        <div class="mb-3">
+            <h6 class="text-uppercase font-size-11 mb-3 text-muted">System</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Automatic updates</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Current statistics</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+                        <label class="custom-control-label" for="customSwitch2"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>User suggestions</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <h6 class="text-uppercase font-size-11 mb-3 text-muted">Account</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Senior account security</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                        <label class="custom-control-label" for="customSwitch4"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Account protection</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch5" checked>
+                        <label class="custom-control-label" for="customSwitch5"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-3">
+            <h6 class="text-uppercase font-size-11 mb-3 text-muted">Notifications</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Browser notifications</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch6">
+                        <label class="custom-control-label" for="customSwitch6"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Mobile notifications</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch7">
+                        <label class="custom-control-label" for="customSwitch7"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Email subscription</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch8">
+                        <label class="custom-control-label" for="customSwitch8"></label>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between p-l-r-0 p-t-b-5">
+                    <span>Sms notifications</span>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch9" checked>
+                        <label class="custom-control-label" for="customSwitch9"></label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end::sidebar settings -->
+
+<!-- begin::navigation -->
+<div class="navigation">
+    <div class="navigation-icon-menu">
+        <ul>
+            <li data-toggle="tooltip" title="Dashboard">
+                <a href="#navigationDashboards" title="Dashboards">
+                    <i class="icon ti-pie-chart"></i>
+                    <span class="badge badge-warning">2</span>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Apps">
+                <a href="#navigationApps" title="Apps">
+                    <i class="icon ti-package"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Plugins">
+                <a href="#navigationPlugins">
+                    <i class="icon ti-brush-alt"></i>
+                </a>
+            </li>
+            <li class="active" data-toggle="tooltip" title="Elements">
+                <a href="#navigationElements">
+                    <i class="icon ti-layers"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Pages">
+                <a href="#navigationPages" title="User Pages">
+                    <i class="icon ti-user"></i>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li data-toggle="tooltip" title="Edit Profile">
+                <a href="#" class="go-to-page">
+                    <i class="icon ti-settings"></i>
+                </a>
+            </li>
+            <li data-toggle="tooltip" title="Logout">
+                <a href="login.html" class="go-to-page">
+                    <i class="icon ti-power-off"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation-menu-body">
+        <ul id="navigationDashboards" >
+            <li class="navigation-divider">DASHBOARD</li>
+            <li>
+                <a href="index.html">Sales & CRM</a>
+            </li>
+            <li>
+                <a href="dashboard-two.html">Helpdesk <span class="badge badge-warning">2</span></a>
+            </li>
+            <li>
+                <a href="dashboard-three.html">Website Analytics </a>
+            </li>
+            <li class="navigation-divider">Other</li>
+            <li>
+                <a href="widgets.html">Extra Widgets</a>
+            </li>
+            <li class="navigation-divider">Summary</li>
+            <li>
+                <a href="#">
+                    <div class="d-flex align-items-center mb-2">
+                        <div>
+                            <div class="icon-block bg-warning text-white mr-3">
+                                <i class="ti-bar-chart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase font-size-11">Total Sales</h6>
+                            <h4 class="m-b-0">$1,958,104</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="d-flex align-items-center mb-2">
+                        <div>
+                            <div class="icon-block bg-success text-white mr-3">
+                                <i class="ti-email"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase font-size-11">Total Ticket</h6>
+                            <h4 class="m-b-0">214</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <div class="icon-block bg-info text-white mr-3">
+                                <i class="ti-user"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase font-size-11">Unique Visitors</h6>
+                            <h4 class="m-b-0">30.313</h4>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul id="navigationApps">
+            <li class="navigation-divider">Apps</li>
+            <li>
+                <a href="chat.html">Chat</a>
+            </li>
+            <li>
+                <a href="inbox.html">Email</a>
+            </li>
+            <li>
+                <a href="calendar.html">Calendar</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="navigation-divider">Friends</li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-success avatar-xs mr-3">
+                            <span class="avatar-title bg-warning rounded-circle">M</span>
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Mireille Kippin</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-warning avatar-xs mr-3">
+                            <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Janis McGinty</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-danger avatar-xs mr-3">
+                            <span class="avatar-title bg-info rounded-circle">A</span>
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Alf Skeat</h6>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="d-flex">
+                    <div>
+                        <figure class="avatar avatar-state-info avatar-xs mr-3">
+                            <span class="avatar-title bg-danger rounded-circle">K</span>
+                        </figure>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="m-b-0 d-flex font-weight-normal justify-content-between">Kimball Meeson</h6>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul id="navigationPlugins">
+            <li class="navigation-divider">Plugins</li>
+            <li><a href="sweet-alert.html">Sweet Alert </a></li>
+            <li><a href="lightbox.html">Lightbox </a></li>
+            <li><a href="toast.html">Toast </a></li>
+            <li><a href="tour.html">Tour </a></li>
+            <li><a href="slick-slide.html">Slick Slide </a></li>
+            <li><a href="nestable.html">Nestable </a></li>
+            <li>
+                <a href="charts.html">Charts</a>
+                <ul>
+                    <li><a href="chart-apex.html">Apex</a></li>
+                    <li><a href="chartjs.html">Chartjs</a></li>
+                    <li><a href="chart-justgage.html">Justgage</a></li>
+                    <li><a href="chart-morsis.html">Morsis</a></li>
+                    <li><a href="chart-peity.html">Peity</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Maps</a>
+                <ul>
+                    <li><a href="google-map.html">Google Map</a></li>
+                    <li><a href="vector-map.html">Vector Map</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul id="navigationElements" class="navigation-active">
+            <li class="navigation-divider">Elements</li>
+            <li>
+                <a href="#">Basic</a>
+                <ul>
+                    <li><a href="alerts.html">Alerts </a></li>
+                    <li><a href="badge.html">Badge </a></li>
+                    <li><a href="buttons.html">Buttons </a></li>
+                    <li><a href="pagination.html">Pagination </a></li>
+                    <li><a href="dropdown.html">Dropdown </a></li>
+                    <li><a href="accordion.html">Accordion </a></li>
+                    <li><a href="carousel.html">Carousel </a></li>
+                    <li><a href="typography.html">Typography </a></li>
+                    <li><a href="list-group.html">List Group </a></li>
+                    <li><a href="media-object.html">Media Object </a></li>
+                    <li><a href="images.html">Images </a></li>
+                    <li><a href="progress.html">Progress </a></li>
+                    <li><a href="modal.html">Modal </a></li>
+                    <li><a href="spinners.html">Spinners </a></li>
+                    <li><a href="navs.html">Navs </a></li>
+                    <li><a href="tab.html">Tab </a></li>
+                    <li><a href="tooltip.html">Tooltip </a></li>
+                    <li><a href="popovers.html">Popovers </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Forms</a>
+                <ul>
+                    <li><a href="basic-form.html">Basic Form </a></li>
+                    <li><a href="custom-form.html">Custom Form </a></li>
+                    <li><a href="advanced-form.html">Advanced Form </a></li>
+                    <li><a href="datepicker.html">Datepicker </a></li>
+                    <li><a href="timepicker.html">Timepicker </a></li>
+                    <li><a href="colorpicker.html">Colorpicker </a></li>
+                    <li><a href="form-validation.html">Form Validation </a></li>
+                    <li><a href="form-wizard.html">Form Wizard </a></li>
+                    <li><a href="file-upload.html">File Upload </a></li>
+                    <li><a href="#">CKEditor</a>
+                        <ul>
+                            <li><a href="ckeditor-article.html">Article Editor </a></li>
+                            <li><a href="ckeditor-inline.html">Inline Editor </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="tables.html">Tables</a>
+                <ul>
+                    <li>
+                        <a href="tables.html">Basic Tables </a>
+                    </li>
+                    <li>
+                        <a href="data-table.html">Data Table </a>
+                    </li>
+                    <li>
+                        <a href="responsive-table.html">Responsive Table </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="open">
+                <a href="#">Cards </a>
+                <ul>
+                    <li><a href="basic-cards.html">Basic Cards </a></li>
+                    <li><a href="image-cards.html">Image Cards </a></li>
+                    <li><a class="active" href="card-scroll.html">Card Scroll </a></li>
+                    <li><a href="other-cards.html">Others </a></li>
+                </ul>
+            </li>
+            <li><a href="colors.html">Colors </a></li>
+            <li>
+                <a href="avatar.html">Avatars</a>
+            </li>
+            <li>
+                <a href="icons.html">Icons</a>
+            </li>
+        </ul>
+        <ul id="navigationPages">
+            <li class="navigation-divider">Pages</li>
+            <li><a href="profile.html">Profile </a></li>
+            <li><a href="timeline.html">Timeline </a></li>
+            <li><a href="invoice.html">Invoice </a></li>
+            <li><a href="pricing-table.html">Pricing Tables </a></li>
+            <li><a href="search-result.html">Search Result </a></li>
+            <li><a href="login.html">Login </a></li>
+            <li><a href="register.html">Register </a></li>
+            <li><a href="recover-password.html">Recovery Password </a></li>
+            <li><a href="lock-screen.html">Lock Screen </a></li>
+            <li>
+                <a href="#">Email Templates</a>
+                <ul>
+                    <li><a href="email-template-basic.html">Basic</a></li>
+                    <li><a href="email-template-alert.html">Alert</a></li>
+                    <li><a href="email-template-billing.html">Billing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Error Pages </a>
+                <ul>
+                    <li><a href="404.html">404 </a></li>
+                    <li><a href="404-2.html">404 V2</a></li>
+                    <li><a href="503.html">503 </a></li>
+                    <li><a href="mean-at-work.html">Mean at Work </a></li>
+                </ul>
+            </li>
+            <li><a href="blank-page.html">Starter Page</a></li>
+            <li>
+                <a href="#">Menu Level</a>
+                <ul>
+                    <li><a href="#">Menu Level </a>
+                        <ul>
+                            <li><a href="#">Menu Level </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end::navigation -->
+
+<!-- begin::header -->
+<div class="header">
+
+    <!-- begin::header logo -->
+    <div class="header-logo">
+        <a href="index.html">
+            <img class="large-logo" src="assets/media/image/logo.png" alt="image">
+            <img class="small-logo" src="assets/media/image/logo-sm.png" alt="image">
+            <img class="dark-logo" src="assets/media/image/logo-dark.png" alt="image">
+        </a>
+    </div>
+    <!-- end::header logo -->
+
+    <!-- begin::header body -->
+    <div class="header-body">
+
+        <div class="header-body-left">
+
+            <h3 class="page-title">Sales & CRM</h3>
+
+            <!-- begin::breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sales & CRM</li>
+                </ol>
+            </nav>
+            <!-- end::breadcrumb -->
+
+        </div>
+
+        <div class="header-body-right">
+            <!-- begin::navbar main body -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search image">
+                            <div class="input-group-append">
+                                <button class="btn btn-light" type="button">
+                                    <i class="ti-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="ti-plus"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3">
+                            <h6 class="text-uppercase font-size-11 m-b-15">Fast Transactions</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-danger-bright bg-hover pt-3 pb-3 border-radius-1 text-danger text-center mb-3">
+                                            <i class="fa fa-sitemap mb-2 font-size-20"></i>
+                                            Categories
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-info-bright bg-hover pt-3 pb-3 border-radius-1 text-info text-center mb-3">
+                                            <i class="ti-game mb-2 font-size-20"></i>
+                                            Products
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-warning-bright bg-hover pt-3 pb-3 border-radius-1 text-warning text-center">
+                                            <i class="ti-bar-chart-alt mb-2 font-size-20"></i>
+                                            Reports
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="d-flex flex-column text-uppercase font-size-11 bg-secondary-bright bg-hover pt-3 pb-3 border-radius-1 text-secondary text-center">
+                                            <i class="fa fa-share mb-2 font-size-20"></i>
+                                            Others
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" data-toggle="dropdown">
+                        <i class="ti-comment"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="text-uppercase m-b-0">Messages</h6>
+                            <small class="font-size-11 opacity-7">1 unread messages</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="p-3 list-group-item d-flex link-1 hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-success rounded-circle">M</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Malanie Hanvey
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 08:50</span>
+                                            <span class="text-muted small">Have you madimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="p-3 list-group-item d-flex link-1 bg-secondary-bright hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-primary rounded-circle">TB</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Kenneth Hune
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 10:23</span>
+                                            <span class="text-muted small">I have a meetinimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="p-3 list-group-item d-flex align-items-center link-1 hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-danger rounded-circle">M</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Kevin added
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 08:50</span>
+                                            <span class="text-muted small">Have you madimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="p-3 list-group-item d-flex align-items-center link-1 hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-info rounded-circle">KC</span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-b-0 d-flex justify-content-between">
+                                                Katherine Ember
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </h6>
+                                            <span class="text-muted m-r-10 small">PM 20:13</span>
+                                            <span class="text-muted small">I have a meetinimage</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-3 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="ti-bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="text-uppercase m-b-0">Notifications</h6>
+                            <small class="font-size-11 opacity-7">2 unread notifications</small>
+                        </div>
+                        <div class="p-3">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div>
+                                        <figure class="avatar avatar-state-danger avatar-sm m-r-15 bring-forward">
+                                            <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                <i class="fa fa-file-text-o font-size-20"></i>
+                                            </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <p class="m-b-5">
+                                            <a href="#">Kevin added</a> new attachment to the ticket
+                                            <a href="#">Software Bug Reporting</a>
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fa fa-clock-o m-r-5"></i> 8 hours ago
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div>
+                                        <figure class="avatar avatar-state-danger avatar-sm m-r-15 bring-forward">
+                                            <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                <i class="fa fa-money font-size-20"></i>
+                                            </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <p class="m-b-5">
+                                            <a href="#">Katherine</a> submitted new ticket
+                                            <a href="#">Payment Method</a>
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fa fa-clock-o m-r-5"></i> Yesterday
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div>
+                                        <figure class="avatar avatar-sm m-r-15 bring-forward">
+                                            <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                                <i class="fa fa-dollar font-size-20"></i>
+                                            </span>
+                                        </figure>
+                                    </div>
+                                    <div>
+                                        <p class="m-b-5">
+                                            <a href="#">Katherine</a> changed settings to ticket category
+                                            <a href="#">Payment & Invoice</a>
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fa fa-clock-o m-r-5"></i> 1 days ago
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link bg-none" data-sidebar-open="#userProfile">
+                        <div>
+                            <figure class="avatar avatar-state-success avatar-sm">
+                                <img src="assets/media/image/avatar.jpg" class="rounded-circle" alt="image">
+                            </figure>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- end::navbar main body -->
+
+            <div class="d-flex align-items-center">
+                <!-- begin::navbar navigation toggler -->
+                <div class="d-xl-none d-lg-none d-sm-block navigation-toggler">
+                    <a href="#">
+                        <i class="ti-menu"></i>
+                    </a>
+                </div>
+                <!-- end::navbar navigation toggler -->
+
+                <!-- begin::navbar toggler -->
+                <div class="d-xl-none d-lg-none d-sm-block navbar-toggler">
+                    <a href="#">
+                        <i class="ti-arrow-down"></i>
+                    </a>
+                </div>
+                <!-- end::navbar toggler -->
+            </div>
+        </div>
+
+    </div>
+    <!-- end::header body -->
+
+</div>
+<!-- end::header -->
+
+<!-- begin::main content -->
+<main class="main-content">
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-scroll">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae commodi
+                            deserunt dolores eaque earum, esse et eveniet excepturi id labore magni maxime modi nemo
+                            nesciunt nobis non, nostrum perferendis placeat praesentium repellat rerum voluptatum!
+                            Eos id nisi obcaecati reprehenderit. Assumenda culpa illum quis sapiente temporibus. Ad
+                            blanditiis cum ducimus fugiat ipsa ipsam magnam maiores maxime nemo officia quas qui
+                            quibusdam unde veritatis voluptas, voluptates voluptatum? Ab ad, asperiores distinctio
+                            dolorem eaque exercitationem facilis ipsa ipsum natus, neque nihil perferendis,
+                            praesentium quisquam quod suscipit vitae voluptas. Accusamus deserunt dolore eos
+                            maiores, nisi porro repellendus velit veniam veritatis, vero voluptas. Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Animi architecto beatae commodi deserunt dolores
+                            eaque earum, esse et eveniet excepturi id labore magni maxime modi nemo nesciunt nobis
+                            non, nostrum perferendis placeat praesentium repellat rerum voluptatum! Eos id nisi
+                            obcaecati reprehenderit. Assumenda culpa illum quis sapiente temporibus. Ad blanditiis
+                            cum ducimus fugiat ipsa ipsam magnam maiores maxime nemo officia quas qui quibusdam unde
+                            veritatis voluptas, voluptates voluptatum? Ab ad, asperiores distinctio dolorem eaque
+                            exercitationem facilis ipsa ipsum natus, neque nihil perferendis, praesentium quisquam
+                            quod suscipit vitae voluptas. Accusamus deserunt dolore eos maiores, nisi porro
+                            repellendus velit veniam veritatis, vero voluptas.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+
+            <div class="card">
+                <div class="card-header">Card Header</div>
+                <div class="card-body">
+                    <div class="card-scroll">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae commodi
+                            deserunt dolores eaque earum, esse et eveniet excepturi id labore magni maxime modi nemo
+                            nesciunt nobis non, nostrum perferendis placeat praesentium repellat rerum voluptatum!
+                            Eos id nisi obcaecati reprehenderit. Assumenda culpa illum quis sapiente temporibus. Ad
+                            blanditiis cum ducimus fugiat ipsa ipsam magnam maiores maxime nemo officia quas qui
+                            quibusdam unde veritatis voluptas, voluptates voluptatum? Ab ad, asperiores distinctio
+                            dolorem eaque exercitationem facilis ipsa ipsum natus, neque nihil perferendis,
+                            praesentium quisquam quod suscipit vitae voluptas. Accusamus deserunt dolore eos
+                            maiores, nisi porro repellendus velit veniam veritatis, vero voluptas. Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Animi architecto beatae commodi deserunt dolores
+                            eaque earum, esse et eveniet excepturi id labore magni maxime modi nemo nesciunt nobis
+                            non, nostrum perferendis placeat praesentium repellat rerum voluptatum! Eos id nisi
+                            obcaecati reprehenderit. Assumenda culpa illum quis sapiente temporibus. Ad blanditiis
+                            cum ducimus fugiat ipsa ipsam magnam maiores maxime nemo officia quas qui quibusdam unde
+                            veritatis voluptas, voluptates voluptatum? Ab ad, asperiores distinctio dolorem eaque
+                            exercitationem facilis ipsa ipsum natus, neque nihil perferendis, praesentium quisquam
+                            quod suscipit vitae voluptas. Accusamus deserunt dolore eos maiores, nisi porro
+                            repellendus velit veniam veritatis, vero voluptas.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+
+            <div class="card">
+                <div class="card-header">Card Header</div>
+                <div class="card-body">
+                    <div class="card-scroll">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae commodi
+                            deserunt dolores eaque earum, esse et eveniet excepturi id labore magni maxime modi nemo
+                            nesciunt nobis non, nostrum perferendis placeat praesentium repellat rerum voluptatum!
+                            Eos id nisi obcaecati reprehenderit. Assumenda culpa illum quis sapiente temporibus. Ad
+                            blanditiis cum ducimus fugiat ipsa ipsam magnam maiores maxime nemo officia quas qui
+                            quibusdam unde veritatis voluptas, voluptates voluptatum? Ab ad, asperiores distinctio
+                            dolorem eaque exercitationem facilis ipsa ipsum natus, neque nihil perferendis,
+                            praesentium quisquam quod suscipit vitae voluptas. Accusamus deserunt dolore eos
+                            maiores, nisi porro repellendus velit veniam veritatis, vero voluptas. Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Animi architecto beatae commodi deserunt dolores
+                            eaque earum, esse et eveniet excepturi id labore magni maxime modi nemo nesciunt nobis
+                            non, nostrum perferendis placeat praesentium repellat rerum voluptatum! Eos id nisi
+                            obcaecati reprehenderit. Assumenda culpa illum quis sapiente temporibus. Ad blanditiis
+                            cum ducimus fugiat ipsa ipsam magnam maiores maxime nemo officia quas qui quibusdam unde
+                            veritatis voluptas, voluptates voluptatum? Ab ad, asperiores distinctio dolorem eaque
+                            exercitationem facilis ipsa ipsum natus, neque nihil perferendis, praesentium quisquam
+                            quod suscipit vitae voluptas. Accusamus deserunt dolore eos maiores, nisi porro
+                            repellendus velit veniam veritatis, vero voluptas.</p>
+                    </div>
+                </div>
+                <div class="card-footer">Card Footer</div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+<!-- end::main content -->
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script></body>
+
+<!-- Mirrored from nextable.laborasyon.com/default/card-scroll.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Jan 2021 12:53:48 GMT -->
+</html>
